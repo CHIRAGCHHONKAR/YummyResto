@@ -1,0 +1,262 @@
+*{font-family: 'Poppin', sans-serif;
+}
+
+
+.red{background-color:#ce1212;}
+
+
+
+/* top up button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #ce1212; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+/* top up button end */
+
+.slide{transition: transform .3s ease-in-out}
+
+.centered {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 95px}
+
+/* nav bar text color change  */
+.header  li a{color: #000;
+              text-decoration: none;
+              display: inline-block;
+              position: relative;}
+.header  li a:after{content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background:#ce1212;
+                transform-origin: center;
+                transition:transform 0.25s ease-out;}
+.header  li a:hover:after{transform: scaleX(1);
+                      transform-origin:center;}
+/* nav bar text color change end */                      
+
+.article{    width: 30%;
+    height: 30%;
+    border-radius: 50px;
+    padding: 25px;
+    background-color: rgba(206, 18, 18, 0.1);;}
+
+/* card hover */
+.box{transition: all 0.3s; }
+.move-up:hover{
+    background-color:'';
+    transition: all .3s ;
+    transform :scale(1.1);
+    box-shadow: 20px;
+}
+.move-up2:hover{
+    background-color:'';
+    transition: all .3s ;
+    transform :translateY(-20px);
+}
+/* card hover end */
+
+/*profile card*/
+.product-grid .social  {
+    opacity: 0;
+    right: -41px;
+    transition: right 0.5s, opacity 0.2s;}
+
+.product-grid:hover .social {
+    right:40px;
+    opacity: 0.5;
+    bottom: 200px;
+}
+
+.product-grid .social  li {
+    display:block ;
+    margin-right: 4px;
+}
+
+.product-grid .social   li a {
+    color: #444444;
+    text-align: center;
+    transition: color 0.2s;
+    z-index: 0;
+    
+} 
+.product-grid .social   li a:hover {color: #000;} 
+/*profile card end*/
+
+
+
+ /*play button hover*/       
+.wrapper {
+  top: 72%;
+  left: 55%;
+  transform: translate(-50%,-50%)
+}
+
+.video {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: transparent;
+  color: #fff;
+  display: inline-block;
+  background: #ce1212;
+  z-index: 999;
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  50% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+
+.waves {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(206, 18, 18, 0.4);;
+  opacity: 0;
+  border-radius: 100%;
+  right: -50px;
+  bottom: -50px;
+  z-index: -1;
+   -webkit-animation: waves 3s ease-in-out infinite;
+  animation: waves 3s ease-in-out infinite;
+}
+        
+.wave-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.wave-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.wave-3 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+ /*play button hover end*/ 
+
+
+
+
+ /*client image*/ 
+.bg-image{background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;}
+ /*client image end*/ 
+
+
+
+ /*menu*/ 
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.show {
+  display: block;
+}
+
+.btn.active {
+  color: #ce1212;
+}
+
+ /*menu end*/
+
+
+ /* Respnosive design */
+ @media only screen and (min-width:10px) and (max-width:360px){
+  .centered {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7px 3px}
+
+  .wrapper {
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%,-50%)}  
+
+  .column {
+    float: left;
+    width: 50%;
+    }
+  .fnt{font-size: 20px;}  
+  .product-grid:hover .social {
+    right:40px;
+    opacity: 0.5;
+    bottom: 50px;
+  }    
+ }
+
+@media only screen and (min-width:361px) and (max-width:481px){
+  .centered {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 13px 8px}
+
+  .wrapper {
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%,-50%)}  
+
+  .column {
+    float: left;
+    width: 50%;
+    }
+  .fnt{font-size: 20px;}  
+  .product-grid:hover .social {
+    right:40px;
+    opacity: 0.5;
+    bottom: 100px;
+  }    
+ }
