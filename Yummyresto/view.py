@@ -56,8 +56,8 @@ def reservationtable(request):
         subject = "New Reservation Submission"
         email_content = f"Name: {name}<br>Email: {email}<br>Phone: {phone}<br>Date: {date}<br>Time: {time}<br>No. Of People: {people}<br>Message:{message}" 
         # Set the email addresses
-        from_email = 'rchirag553@gmail.com'
-        recipient_list = ['rchirag553@gmail.com']
+        from_email = 'example@gmail.com'
+        recipient_list = ['example@gmail.com']
         # Send the email
         send_mail(subject, "", from_email, recipient_list, html_message=email_content)
         rtpage = f"/thankyou/?usrform{form}"
@@ -91,8 +91,8 @@ def clfeedback(request):
         subject = "New Client Feedback"   
         email_content = f"Name: {name}<br>Email: {email}<br>Subject: {subjects}<br>Message: {message}" 
         # Set the email addresses
-        from_email = 'rchirag553@gmail.com'
-        recipient_list = ['rchirag553@gmail.com']
+        from_email = 'example@gmail.com'
+        recipient_list = ['example@gmail.com']
         #send email 
         send_mail(subject, "", from_email, recipient_list, html_message=email_content)
         stpage = f"/mthank/?sendform={form2}"
