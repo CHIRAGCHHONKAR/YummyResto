@@ -372,29 +372,36 @@
                     <div class="col-lg-4 p-0">
                         <img src="/static/images/reservation.jpg" class="img-fluid">
                     </div>
-                    <div class="col-lg-8 text-center p-5 mt-5">
+                    <div class="col-lg-8 text-start p-5 mt-5">
                         <form method="POST" action="{% url 'reserve' %}">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-lg-4 mt-4">
+                                    <label class="ps-1 pb-1">Name</label>
                                     {{ usrform.name }}
                                 </div>
                                 <div class="col-lg-4 mt-4">
+                                    <label class="ps-1 pb-1">Email</label>
                                     {{ usrform.email }}
                                 </div>
                                 <div class="col-lg-4 mt-4">
+                                    <label class="ps-1 pb-1">Phone No.</label>
                                     {{ usrform.phone }}
                                 </div>
                                 <div class="col-lg-4 mt-4">
+                                    <label class="ps-1 pb-1">Date</label>
                                     {{ usrform.date }}
                                 </div>
                                 <div class="col-lg-4 mt-4">
+                                    <label class="ps-1 pb-1">Time</label>
                                     {{ usrform.time }}
                                 </div>
                                 <div class="col-lg-4 mt-4">
+                                    <label class="ps-1 pb-1"># of People</label>
                                     {{ usrform.people }}
                                 </div>
                                 <div class="col-lg-12 mt-3">
+                                    <label class="ps-1 pb-1">Message</label>
                                     {{ usrform.comments }}
                                 </div>
                             </div>
