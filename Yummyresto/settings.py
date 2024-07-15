@@ -136,7 +136,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587  # Use the appropriate port for your SMTP provider
 EMAIL_USE_TLS = True  # Use TLS for security
 EMAIL_HOST_USER = 'rchirag553@gmail.com'
-EMAIL_HOST_PASSWORD = 'zggvpmsmioigolri'
+EMAIL_HOST_PASSWORD = 'amqg lzux jdmk rtmu'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / "media"
